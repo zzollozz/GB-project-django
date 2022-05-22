@@ -1,0 +1,4 @@
+venvgeekshop/
+.idea/
+__pycache__/
+*.pyc
