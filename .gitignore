@@ -2,3 +2,4 @@ venvgeekshop/
 .idea/
 __pycache__/
 *.pyc
+text_lesson.py
