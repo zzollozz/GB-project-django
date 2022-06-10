@@ -1,0 +1,75 @@
+[
+    {
+        "category": "дом",
+        "name": "Дом1",
+        "image": "product/product_1.jpg",
+        "shot_desc": "Краткое описание Дом1",
+        "description": "Подробное описание товара Дом1",
+        "price": "800.00",
+        "quantity": "10"
+
+    },
+    {
+        "category": "дом",
+        "name": "Дом2",
+        "image": "product/product_1.jpg",
+        "shot_desc": "Краткое описание Дом2",
+        "description": "Подробное описание товара Дом2",
+        "price": "800.00",
+        "quantity": "10"
+    },
+    {
+        "category": "офис",
+        "name": "Офис1",
+        "image": "product/product_1.jpg",
+        "shot_desc": "Краткое описание Офис1",
+        "description": "Подробное описание товара Офис1",
+        "price": "1800.00",
+        "quantity": "10"
+    },
+    {
+        "category": "офис",
+        "name": "Офис2",
+        "image": "product/product_1.jpg",
+        "shot_desc": "Краткое описание Офис2",
+        "description": "Подробное описание товара Офис2",
+        "price": "400.00",
+        "quantity": "10"
+    },
+    {
+        "category": "модерн",
+        "name": "Модерн1",
+        "image": "product/product_1.jpg",
+        "shot_desc": "Краткое описание Модерн1",
+        "description": "Подробное описание товара Модерн1",
+        "price": "1239.00",
+        "quantity": "10"
+    },
+    {
+        "category": "модерн",
+        "name": "Модерн2",
+        "image": "product/product_1.jpg",
+        "shot_desc": "Краткое описание Модерн2",
+        "description": "Подробное описание товара Модерн2",
+        "price": "800.00",
+        "quantity": "10"
+    },
+    {
+        "category": "классика",
+        "name": "Классика1",
+        "image": "product/product_1.jpg",
+        "shot_desc": "Краткое описание Классика1",
+        "description": "Подробное описание товара Классика1",
+        "price": "2400.00",
+        "quantity": "10"
+    },
+    {
+        "category": "классика",
+        "name": "Классика2",
+        "image": "product/product_1.jpg",
+        "shot_desc": "Краткое описание Классика2",
+        "description": "Подробное описание товара Классика2",
+        "price": "2400.00",
+        "quantity": "10"
+    }
+]
