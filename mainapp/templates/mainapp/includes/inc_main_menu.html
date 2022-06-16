@@ -9,6 +9,18 @@
     <li>
         <a href="{% url 'contact' %}" {% if request.resolver_match.url.name == 'contact' %}class="active"{% endif %}>контакты</a>
     </li>
+    {% if user.is_authenticated %}
+        <li>
+            <a href="{% url 'authapp:edit' %}" >{{ user.firstname|default:'Пользователь' }}</a>
+        </li>
+        <li>
+            <a href="{% url 'authapp:logout' %}" >выход</a>
+        </li>
+    {% else %}
+        <li>
+            <a href="{% url 'authapp:login' %}" >вход</a>
+        </li>
+    {% endif %}
 </ul>
 <a href="#" class="search"></a>
 <a href="#" class="basket"></a>
