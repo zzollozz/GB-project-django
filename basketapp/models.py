@@ -18,3 +18,20 @@ class Basket(models.Model):
         verbose_name = 'корзина'
         verbose_name_plural = 'корзины'
         ordering = ('created_at',)
+
+    """ Следующий код (ф-ции) лучше писать в СЕРВИСНОЙ МОДЕЛИ в Джанго !!!? """
+    @property
+    def product_cost(self):
+        """ Метод при получении стоимости КорзинкИ """
+        return self.product.price * self.quantity
+
+    @property
+    def total_quantity(self):
+        _items = Basket.objects.filter(user=self.user)
+        # return sum(list(map(lambda x: x.quantity, _items)))
+        return sum(list(_items.values_list('quantity', flat=True)))
+
+    @property
+    def total_cost(self):
+        _items = Basket.objects.filter(user=self.user)
+        return sum(list(map(lambda x: x.product_cost, _items)))
