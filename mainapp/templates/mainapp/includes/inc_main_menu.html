@@ -10,6 +10,11 @@
         <a href="{% url 'contact' %}" {% if request.resolver_match.url.name == 'contact' %}class="active"{% endif %}>контакты</a>
     </li>
     {% if user.is_authenticated %}
+        {% if user.is_superuser %}
+            <li>
+                <a href="{% url 'adminapp:user_read' %}" >Админка</a>
+            </li>
+        {% endif %}
         <li>
             <a href="{% url 'authapp:edit' %}" >{{ user.firstname|default:'Пользователь' }}</a>
         </li>
