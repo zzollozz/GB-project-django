@@ -2,7 +2,7 @@ from authapp.forms import ShopUserEditForm
 from authapp.models import ShopUser
 from django import forms
 
-from mainapp.models import Product
+from mainapp.models import Product, Category
 
 
 class UserAdminEditForm(ShopUserEditForm):
@@ -11,10 +11,9 @@ class UserAdminEditForm(ShopUserEditForm):
         fields = '__all__'
 
 
-class ProductEditForm(forms.ModelForm):
+class CategoryEditForm(forms.ModelForm):
     class Meta:
-        model = Product
-        # fields = '__all__'
+        model = Category
         exclude = ('is_active',)
 
     def __init__(self, *args, **kwargs):
@@ -22,5 +21,18 @@ class ProductEditForm(forms.ModelForm):
         for filed_name, filed in self.fields.items():
             filed.widget.attrs['class'] = 'form-control'
             filed.help_text = ''
+
+
+class ProductEditForm(forms.ModelForm):
+    class Meta:
+        model = Product
+        # fields = '__all__'
+        exclude = ('is_active',)
+
+    # def __init__(self, *args, **kwargs):
+    #     super().__init__(*args, **kwargs)
+    #     for filed_name, filed in self.fields.items():
+    #         filed.widget.attrs['class'] = 'form-control'
+    #         filed.help_text = ''
 
 
