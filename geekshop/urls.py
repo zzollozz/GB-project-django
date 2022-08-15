@@ -26,12 +26,13 @@ urlpatterns = [
     path('', views.index, name='index'),
     # path('products/', views.products, name='products'),
     path('products/', include('mainapp.urls', namespace='products')),
+
     path('auth/', include('authapp.urls', namespace='authapp')),
     path('basket/', include('basketapp.urls', namespace='basket')),
     path('contact/', views.contact, name='contact'),
 ]
 
-if settings.DEBUG:
+if settings.DEBUG:   # Это для того чтоб подключение Статики было только на ЛоКале
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 

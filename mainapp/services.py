@@ -14,7 +14,7 @@ def get_hot_product():
     return Product.objects.all().order_by('?').first()  # выберается объект с Базы
 
     # products_list = Product.objects.all()             # Выберается уже через КвериСет а это медленно
-    # return random.sample(list(products_list), 1)[0]
+    # return random.sample(list(products_list), 1)[0]   # Использовать если небольшое количество
 
 
 def get_same_products(product):

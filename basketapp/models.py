@@ -21,17 +21,17 @@ class Basket(models.Model):
 
     """ Следующий код (ф-ции) лучше писать в СЕРВИСНОЙ МОДЕЛИ в Джанго !!!? """
     @property
-    def product_cost(self):
+    def product_cost(self):     # Стоимость продукта
         """ Метод при получении стоимости КорзинкИ """
         return self.product.price * self.quantity
 
     @property
-    def total_quantity(self):
+    def total_quantity(self):   # Общая численность
         _items = Basket.objects.filter(user=self.user)
         # return sum(list(map(lambda x: x.quantity, _items)))
         return sum(list(_items.values_list('quantity', flat=True)))
 
     @property
-    def total_cost(self):
+    def total_cost(self):       # Общая стоимость
         _items = Basket.objects.filter(user=self.user)
         return sum(list(map(lambda x: x.product_cost, _items)))

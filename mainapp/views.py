@@ -46,7 +46,7 @@ def products(request, pk=None):
     context = {
         'links_menu': links_menu,
         'basket': get_basket(request.user),
-         'hot_product': hot_product,
+        'hot_product': hot_product,
         'same_products': same_products
     }
     return render(request, 'mainapp/products.html', context)
