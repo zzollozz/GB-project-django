@@ -16,7 +16,7 @@
             </li>
         {% endif %}
         <li>
-            <a href="{% url 'authapp:edit' %}" >{{ user.firstname|default:'Пользователь' }}</a>
+            <a href="{% url 'authapp:edit' %}" >{{ user.first_name|default:'Пользователь' }}</a>
         </li>
         <li>
             <a href="{% url 'authapp:logout' %}" >выход</a>

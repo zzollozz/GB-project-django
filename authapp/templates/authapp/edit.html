@@ -6,7 +6,7 @@
         {{ form.as_p }}
         <button class="btn btn-primary" type="submit">Сохранить</button>
     </form>
-    <a class="btn btn-link" href="{% url 'authapp:login' %}" style="width: 100%">На главную</a>
+    <a class="btn btn-link" href="{% url 'index' %}" style="width: 100%">На главную</a>
     <div class="user_avatar">
         <img src="/media/{{ user.avatar }}"/>
     </div>
