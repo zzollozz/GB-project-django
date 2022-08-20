@@ -10,5 +10,13 @@
         {{ form.as_p }}
         <button class="btn btn-primary" type="submit">Войти</button>
     </form>
-    <a class="btn btn-primary" href="{% url 'authapp:register' %}" style="width: 100%">Зарегистрироваться</a>
+        <a class="btn btn-primary" href="{% url 'authapp:register' %}" style="width: 100%; margin-bottom: 5px">
+            Зарегистрироваться
+        </a>
+        <a class="btn btn-primary" href="{% url 'social:begin' 'vk-oauth2' %}?next=/" style="width: 100%; margin-bottom: 5px">
+            Вход через ВКонтакте
+        </a>
+        <a class="btn btn-primary" href="{% url 'social:begin' 'google-oauth2' %}?next=/" style="width: 100%; margin-bottom: 5px">
+            Вход через Google
+        </a>
 {% endblock %}

@@ -1,6 +1,6 @@
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm
 from django import forms
-from authapp.models import ShopUser
+from authapp.models import ShopUser, ShopUserProfile
 import re
 import random, hashlib
 
@@ -70,3 +70,12 @@ class ShopUserEditForm(UserChangeForm):
             if re.match(pattern, email) is not None:
                 raise forms.ValidationError("Адресс введен не верно!")
             return email
+
+class ShopUserProfileEditForm(forms.ModelForm):
+    class Meta:
+        model = ShopUserProfile
+        fields = ('tagline', 'aboutMe', 'gender')
+    def __init__(self, *args, **kwargs):
+        super(ShopUserProfileEditForm, self).__init__(*args, **kwargs)
+        for field_name, field in self.fields.items():
+            field.widget.attrs['class'] = 'form-control'

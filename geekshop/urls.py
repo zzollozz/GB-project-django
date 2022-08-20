@@ -30,9 +30,12 @@ urlpatterns = [
     path('auth/', include('authapp.urls', namespace='authapp')),
     path('basket/', include('basketapp.urls', namespace='basket')),
     path('contact/', views.contact, name='contact'),
+
+    path('', include('social_django.urls', namespace='social')),
 ]
 
 if settings.DEBUG:   # Это для того чтоб подключение Статики было только на ЛоКале
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
 
 

@@ -41,7 +41,8 @@ class Command(BaseCommand):
 
 
 
-        shop_user =  ShopUser.objects.create_superuser(username='django', email='django@bg.local', age=33)
+        shop_user =  ShopUser.objects.create_superuser(username='django', email='django@bg.local')
         shop_user.set_password('geekbrains')
         shop_user.save()
+
 

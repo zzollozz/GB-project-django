@@ -1,4 +1,4 @@
-import success as success
+# import success as success
 from django.shortcuts import render, get_object_or_404
 
 from adminapp.forms import UserAdminEditForm, ProductEditForm, CategoryEditForm

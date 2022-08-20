@@ -1,12 +1,13 @@
 from django.shortcuts import render, HttpResponseRedirect
 from django.contrib import auth
-from authapp.forms import ShopUserLoginForm, ShopUserRegisterForm, ShopUserEditForm
+from authapp.forms import ShopUserLoginForm, ShopUserRegisterForm, ShopUserEditForm, ShopUserProfileEditForm
 from django.urls import reverse
 
 from django.core.mail import send_mail
 from django.conf import settings
 from authapp.models import ShopUser
 
+from django.db import transaction
 
 def login(request):
     login_form = ShopUserLoginForm(data=request.POST)
@@ -54,17 +55,22 @@ def register(request):
     }
     return render(request, 'authapp/register.html', context)
 
+@transaction.atomic
 def edit(request):
     if request.method == 'POST':
         edit_form = ShopUserEditForm(request.POST, request.FILES, instance=request.user)
-        if edit_form.is_valid():
+        profile_form = ShopUserProfileEditForm(request.POST, instance=request.user.shopuserprofile)
+
+        if edit_form.is_valid() and profile_form.is_valid():
             edit_form.save()
             return HttpResponseRedirect(reverse('authapp:edit'))
     else:
         edit_form = ShopUserEditForm(instance=request.user)
+        profile_form = ShopUserProfileEditForm(instance=request.user.shopuserprofile)
     context = {
         'form': edit_form,
-        'title': 'Редактирование профеля'
+        'title': 'Редактирование профеля',
+        'profile_form': profile_form
     }
     return render(request, 'authapp/edit.html', context)
 
@@ -88,5 +94,6 @@ def verify(request, email, activation_key):
             return render(request, 'authapp/verification.html')
     except Exception as e:
         print(f'error activation user : {e.args}')
-    return HttpResponseRedirect(reverse('authapp:verification'))
+    return HttpResponseRedirect(reverse('index'))
+
 
