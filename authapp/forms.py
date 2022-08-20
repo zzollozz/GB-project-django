@@ -2,6 +2,7 @@ from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, User
 from django import forms
 from authapp.models import ShopUser
 import re
+import random, hashlib
 
 
 class ShopUserLoginForm(AuthenticationForm):
@@ -26,11 +27,20 @@ class ShopUserRegisterForm(UserCreationForm):
             for file_name, filed in self.fields.items():
                 filed.widget.attrs['class'] = 'form-control'
 
-        def clean_age(self):
-            current_age = self.cleaned_data['age']
-            if current_age < 18:
-                raise forms.ValidationError("Вы слишком молоды!")
-            return current_age
+    def clean_age(self):
+        current_age = self.cleaned_data['age']
+        if current_age < 18:
+            raise forms.ValidationError("Вы слишком молоды!")
+        return current_age
+
+    def save(self):
+        user = super(ShopUserRegisterForm, self).save()
+
+        user.is_active = False
+        salt = hashlib.sha1(str(random.random()).encode('utf8')).hexdigest()[:6]
+        user.activation_key = hashlib.sha1((user.email + salt).encode('utf8')).hexdigest()
+        user.save()
+        return user
 
 
 class ShopUserEditForm(UserChangeForm):
