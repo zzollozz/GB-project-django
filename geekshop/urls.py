@@ -21,7 +21,7 @@ from django.conf import settings
 from mainapp import views
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
+    path('admin_default', admin.site.urls),    # Стандартная админка
     path('admin/', include('adminapp.urls', namespace='adminapp')),
     path('', views.index, name='index'),
     # path('products/', views.products, name='products'),
@@ -30,6 +30,7 @@ urlpatterns = [
     path('auth/', include('authapp.urls', namespace='authapp')),
     path('basket/', include('basketapp.urls', namespace='basket')),
     path('contact/', views.contact, name='contact'),
+    path('orders/', include('ordersapp.urls', namespace='orders')),
 
     path('', include('social_django.urls', namespace='social')),
 ]
