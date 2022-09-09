@@ -10,8 +10,8 @@ window.onload = function () {
     var order_total_cost = parseFloat($('.order_total_cost').text().replace(',', '.')) || 0;
 
     for (var i = 0; i < TOTAL_FORMS; i++) {
-        _quantity = parseInt($('input[name="orderitems-' + i + '-quantity"]').val());
-        _price = parseFloat($('.orderitems-' + i + '-price').text().replace(',', '.'));
+        _quantity = parseInt($('input[name=orderitems-' + i + '-quantity]').val());
+        _price = parseFloat(document.querySelector(`#id_orderitems-${i}-price`).value);
 
         quantity_arr[i] = _quantity;
         if (_price) {
@@ -31,7 +31,7 @@ window.onload = function () {
         $('.order_total_cost').html(Number(order_total_cost.toFixed(2)).toString());
     }
 
-    $('.order_form').on('click', 'input[type="number"]', function () {
+    $('.order_form').on('click', 'input[type="number"]', function (event) {
         var target = event.target;
         orderitem_num = parseInt(target.name.replace('orderitems-', '').replace('-quantity', ''));
         if (price_arr[orderitem_num]) {
@@ -42,7 +42,7 @@ window.onload = function () {
         }
     });
 
-    $('.order_form').on('click', 'input[type="checkbox"]', function () {
+    $('.order_form').on('click', 'input[type="checkbox"]', function (event) {
         var target = event.target;
         orderitem_num = parseInt(target.name.replace('orderitems-', '').replace('-DELETE', ''));
         if (target.checked) {
@@ -62,4 +62,23 @@ window.onload = function () {
         $('.order_total_cost').html(order_total_cost.toString());
         $('.order_total_quantity').html(order_total_quantity.toString());
     }
+
+    function deleteOrderItem(row) {
+        var target_name= row[0].querySelector('input[type="number"]').name;
+        orderitem_num = parseInt(target_name.replace('orderitems-', '').replace('-quantity', ''));
+        delta_quantity = -quantity_arr[orderitem_num];
+        orderSummaryUpdate(price_arr[orderitem_num], delta_quantity);
+    }
+
+    $('.formset_row').formset({
+            addText: 'добавить продукт',
+            deleteText: 'удалить',
+            prefix: 'orderitems',
+            removed: deleteOrderItem
+    });
+
+    $('.order_form select').change(function (event) {
+        var target = event.target;
+        console.log(target); });
+
 }
