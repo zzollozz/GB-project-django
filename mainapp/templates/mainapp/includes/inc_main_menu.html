@@ -9,23 +9,32 @@
     <li>
         <a href="{% url 'contact' %}" {% if request.resolver_match.url.name == 'contact' %}class="active"{% endif %}>контакты</a>
     </li>
-    {% if user.is_authenticated %}
-        {% if user.is_superuser %}
-            <li>
-                <a href="{% url 'adminapp:user_read' %}" >Админка</a>
+    <li class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <a href="#" >пользователь</a>
+    </li>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        {% if user.is_authenticated %}
+             <li class="dropdown-item">
+                <a href="{% url 'orders:orders_list' %}" >заказы</a>
+             </li>
+            {% if user.is_superuser %}
+                <li class="dropdown-item">
+                    <a href="{% url 'adminapp:user_read' %}" >Админка</a>
+                </li>
+            {% endif %}
+            <li class="dropdown-item">
+                <a href="{% url 'authapp:edit' %}" >{{ user.first_name|default:'Пользователь' }}</a>
             </li>
-        {% endif %}
-        <li>
-            <a href="{% url 'authapp:edit' %}" >{{ user.first_name|default:'Пользователь' }}</a>
-        </li>
-        <li>
-            <a href="{% url 'authapp:logout' %}" >выход</a>
-        </li>
-    {% else %}
-        <li>
-            <a href="{% url 'authapp:login' %}" >вход</a>
-        </li>
+            <li class="dropdown-item">
+                <a href="{% url 'authapp:logout' %}" >выход</a>
+            </li>
+        {% else %}
+            <li>
+                <a href="{% url 'authapp:login' %}" >вход</a>
+            </li>
+        </ul>
     {% endif %}
+
 </ul>
 <a href="#" class="search"></a>
 <a href="{% url 'basket:List' %}" class="basket">

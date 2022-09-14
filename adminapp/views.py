@@ -47,7 +47,7 @@ def user_delete(request, pk):
     if request.method == 'POST':
         user_item.is_active = False
         user_item.save()
-        return HttpResponseRedirect(reverse('adminapp: user_resd'))
+        return HttpResponseRedirect(reverse('adminapp:user_read'))
     context = {
         'object': user_item
     }
