@@ -35,7 +35,12 @@ urlpatterns = [
     path('', include('social_django.urls', namespace='social')),
 ]
 
-if settings.DEBUG:   # Это для того чтоб подключение Статики было только на ЛоКале
+if settings.DEBUG:
+    # Это для подключение Тол Бара
+    import debug_toolbar
+    urlpatterns += [path('__debug__/', include(debug_toolbar.urls))]
+
+    # Это для того чтоб подключение Статики было только на ЛоКале
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
