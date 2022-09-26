@@ -691,8 +691,8 @@ html, body {
 	background-image: url(/static/img/basket.png);
 	position: absolute;
 	top: 63px;
-	/*left: 1210px;*/
-	left: 1185px;
+	left: 1210px;
+	/*left: 1185px;*/
     text-decoration: none;
     color: #555;
 }

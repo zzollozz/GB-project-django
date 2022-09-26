@@ -39,7 +39,7 @@
 <a href="#" class="search"></a>
 <a href="{% url 'basket:List' %}" class="basket">
 {#    <span style="display: block; margin-left: 30px; color:red">{{ basket }}</span>#}
-    <span style="display: block; margin-left: 30px; color:red">
+    <span style="display: flex; color: #c40a0a; flex-wrap: nowrap; align-content: center; justify-content: flex-start;">
         {% if basket %}
             {{ basket.0.total_cost|floatformat:0 }} руб
             ({{ basket.0.total_quantity }}шт)
