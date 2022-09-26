@@ -46,6 +46,7 @@ class Order(models.Model):
         return len(items)
 
     def get_total_cost(self):
+        """ Общая стоимость заказа """
         items = self.orderitems.select_related()
         return sum(list(map(lambda x: x.quantity * x.product.price, items)))
 

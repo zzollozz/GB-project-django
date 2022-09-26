@@ -19,11 +19,10 @@ env = environ.Env(
     DEBUG=(bool, False)
 )
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
+environ.Env.read_env(BASE_DIR / '../.env')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -60,6 +59,7 @@ INSTALLED_APPS = [
     'ordersapp',
     'debug_toolbar',
     'template_profiler_panel',
+    'django_extensions',
 ]
 
 AUTHENTICATION_BACKENDS = (
@@ -111,18 +111,12 @@ SOCIAL_AUTH_VK_OAUTH2_SCOPE = ['email']
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'NAME': 'geekshop',
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'USER': 'postgres',
-#     }
-# }
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': env.str('DATABASES_NAME'),
+        'ENGINE': env.str('DATABASES_ENGINE'),
+        'USER': env.str('DATABASES_USER'),
     }
 }
 
@@ -172,10 +166,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# STATICFILES_DIRS = (
-#     BASE_DIR / 'static',
-# )
+
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
