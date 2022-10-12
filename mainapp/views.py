@@ -15,7 +15,7 @@ def index(request):
         # 'basket': get_basket(request.user)
     }
     return render(request, 'mainapp/index.html', context)
-@cache_page(3600) # Кеширование более высокого уровня (Вся страница)
+# @cache_page(3600) # Кеширование более высокого уровня (Вся страница)
 def products(request, pk=None):
     links_menu = get_links_menu()
     if pk is not None:
@@ -55,37 +55,33 @@ def products(request, pk=None):
     return render(request, 'mainapp/products.html', context)
 
 def products_ajax(request, pk=None):
-    if request.is_ajax():
-        links_menu = get_links_menu()
-        if pk:
-            if pk == 0:
-                products_list = get_products()
-                category_item = {'name': 'Все', 'pk': 0}
-            else:
-                category_item = get_object_or_404(Category, pk=pk)
-                products_list = get_products()
+    links_menu = get_links_menu()
+    if pk is not None:
+        if pk == 0:
+            products_list = get_products()
+            category_item = {'name': 'Все', 'pk': 0}
+        else:
+            category_item = get_object_or_404(Category, pk=pk)
+            products_list = get_products()
 
-            page = request.GET.get('page')
-            paginator = Paginator(products_list, 2)
-            try:
-                paginated_products = paginator.page(page)
-            except PageNotAnInteger:
-                paginated_products = paginator.page(1)
-            except EmptyPage:
-                paginated_products = paginator.page(paginator.num_pages)
+        page = request.GET.get('page')
+        paginator = Paginator(products_list, 2)
+        try:
+            paginated_products = paginator.page(page)
+        except PageNotAnInteger:
+            paginated_products = paginator.page(1)
+        except EmptyPage:
+            paginated_products = paginator.page(paginator.num_pages)
 
-                content = {
-                    'links_menu': links_menu,
-                    'category': category_item,
-                    'products': paginated_products,
-                }
-                result = render_to_string('mainapp/includes/inc_products_list_content.html',
-                                          context=content,
-                                          request=request)
-                return JsonResponse({'result': result})
-
-
-
+        content = {
+            'links_menu': links_menu,
+            'category': category_item,
+            'products': paginated_products,
+        }
+        result = render_to_string('mainapp/includes/inc_products_list_content.html',
+                                  context=content,
+                                  request=request)
+        return JsonResponse({'result': result})
 
 def product(request, pk):
     product_item = get_product(pk)

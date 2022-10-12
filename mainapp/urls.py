@@ -9,7 +9,7 @@ urlpatterns = [
     path('<int:pk>/', products, name='product_list'),
     path('product/<int:pk>/', product, name='product_item'),
 
-    path('category/<int:pk>/ajax/', cache_page(3600)(products_ajax))
+    path('<int:pk>/ajax/', products_ajax)
 ]
 
 

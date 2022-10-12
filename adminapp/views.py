@@ -69,11 +69,16 @@ def category_read(request):
     }
     return render(request, 'adminapp/category_list.html', context)
 
+class CategoryUpdateView(AccessMixim, UpdateView):
+    model = Category
+    template_name = 'adminapp/category_update.html'
+    success_url = reverse_lazy('admin_staff:categories')
+    fields = '__all__'
+
 
 @user_passes_test(lambda u: u.is_superuser)
-def category_update(request):
+def category_update(request, pk):
     return None
-
 
 @user_passes_test(lambda u: u.is_superuser)
 def category_delete(request):

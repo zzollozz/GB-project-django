@@ -1,48 +1,47 @@
 {% load static %}
 
-<div class="details">
-    <div class="links clearfix">
-        {% include 'mainapp/includes/inc_products_menu.html' %}
+
+<div class="links clearfix">
+    {% include 'mainapp/includes/inc_products_menu.html' %}
 {#        {% include 'mainapp/includes/inc_categories_menu.html' %}#}
+</div>
+<div class="products_list">
+    <div class="title clearfix">
+        <h2>
+            Категоря: {{ category.name|title }}
+        </h2>
     </div>
-    <div class="products_list">
-        <div class="title clearfix">
-            <h2>
-                Категоря: {{ category.name|title }}
-            </h2>
-        </div>
-        <div class="pogination">
-            {% if products.has_previous %}
-                <a href="?page={{ products.previous_page_number}}"><< Prev </a>
-            {% endif %}
+    <div class="pogination">
+        {% if products.has_previous %}
+            <a href="?page={{ products.previous_page_number}}"><< Prev </a>
+        {% endif %}
 
 {#                    <span>Страница {{ products.number }} из {{ products.paginator.num_pages }}</span>#}
-            {% for item in products.paginator.page_range %}
-                {% if item == products.number %}
-                    <span>{{ item }}</span>
-                {% else %}
-                    <a href="?page={{ item }}">{{ item }}</a>
-                {% endif %}
-            {% endfor %}
-
-            {% if products.has_next %}
-                <a href="?page={{ products.next_page_number}}"> Next >></a>
+        {% for item in products.paginator.page_range %}
+            {% if item == products.number %}
+                <span>{{ item }}</span>
+            {% else %}
+                <a href="?page={{ item }}">{{ item }}</a>
             {% endif %}
-        </div>
-        <div class="products">
-            {% for product in products %}
-                <div class="block">
-                    <a href="{% url 'products:product_item' product.pk %}"><img src="/media/{{ product.image }}" alt="">
-                        <div class="text">
-                            <img src="{% static 'img/icon-hover.png' %}" alt="img">
-                            <h4>{{ product.name }}</h4>
-                            <h4>{{ category.product.name }}</h4>
-                            <p>{{ product.short_desc }}</p>
-                        </div>
-                    </a>
-                </div>
-            {% endfor %}
-        </div>
+        {% endfor %}
 
+        {% if products.has_next %}
+            <a href="?page={{ products.next_page_number}}"> Next >></a>
+        {% endif %}
     </div>
+    <div class="products">
+        {% for product in products %}
+            <div class="block">
+                <a href="{% url 'products:product_item' product.pk %}"><img src="/media/{{ product.image }}" alt="">
+                    <div class="text">
+                        <img src="{% static 'img/icon-hover.png' %}" alt="img">
+                        <h4>{{ product.name }}</h4>
+                        <h4>{{ category.product.name }}</h4>
+                        <p>{{ product.short_desc }}</p>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+
 </div>
