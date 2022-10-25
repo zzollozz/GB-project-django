@@ -1,0 +1,1312 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2022-06-17T22:00:08.893Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "#Дом1. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2022-06-17T22:01:49.418Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "#Дом2. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2022-06-17T22:02:12.586Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "#Офис1. офис",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2022-06-17T22:02:24.387Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "#Офис2. офис",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2022-06-17T22:02:42.672Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "#Модерн1. модерн",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2022-06-17T22:02:53.140Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "#Модерн2. модерн",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2022-06-17T22:03:04.637Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "#Классика1. классика",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2022-06-17T22:03:22.793Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "#Классика2. классика",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2022-06-18T07:56:20.356Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "#Классика2. классика",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2022-06-18T07:56:20.359Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "#Модерн2. модерн",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2022-06-18T07:56:20.360Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "#Офис1. офис",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2022-06-18T07:56:20.362Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "#Дом2. дом",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2022-09-06T16:31:49.282Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "1",
+      "object_repr": "Текущий заказ: 1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2022-09-06T16:32:09.341Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "2",
+      "object_repr": "Текущий заказ: 2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2022-09-06T16:34:42.321Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "2",
+      "object_repr": "Текущий заказ: 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2022-09-06T16:34:46.191Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "1",
+      "object_repr": "Текущий заказ: 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2022-09-06T17:56:06.905Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "16",
+      "object_repr": "alemaasd",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2022-09-06T17:56:06.907Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "14",
+      "object_repr": "bob",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2022-09-06T17:56:06.909Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "13",
+      "object_repr": "vvvvv",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2022-09-06T17:56:06.910Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "12",
+      "object_repr": "asd",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2022-09-06T17:56:06.911Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "11",
+      "object_repr": "lllll",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2022-09-06T17:56:06.913Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "10",
+      "object_repr": "rrrrr",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2022-09-06T17:56:06.914Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "9",
+      "object_repr": "mmmm",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2022-09-06T17:56:06.915Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "neowewe",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2022-09-06T17:56:06.917Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "dddddd",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2022-09-06T17:56:06.918Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "fffff",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2022-09-06T17:56:06.919Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "ssss",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2022-09-06T17:56:06.920Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "eeeee",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2022-09-06T17:56:06.921Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Qwert",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2022-09-06T20:25:45.109Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "3",
+      "object_repr": "Текущий заказ: 3",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2022-09-08T07:33:39.282Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "7",
+      "object_repr": "Текущий заказ: 7",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2022-09-08T07:33:47.263Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "7",
+      "object_repr": "Текущий заказ: 7",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2022-09-08T07:34:05.102Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "7",
+      "object_repr": "Текущий заказ: 7",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2022-09-08T07:34:23.169Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "7",
+      "object_repr": "Текущий заказ: 7",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2022-09-08T13:24:50.067Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "7",
+      "object_repr": "Текущий заказ: 7",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2022-09-08T13:24:59.665Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "7",
+      "object_repr": "Текущий заказ: 7",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2022-09-08T13:25:03.683Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "6",
+      "object_repr": "Текущий заказ: 6",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2022-09-08T13:25:16.920Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "3",
+      "object_repr": "Текущий заказ: 3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2022-09-08T13:25:16.923Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "4",
+      "object_repr": "Текущий заказ: 4",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2022-09-08T13:25:16.924Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "5",
+      "object_repr": "Текущий заказ: 5",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2022-09-08T13:25:16.925Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "6",
+      "object_repr": "Текущий заказ: 6",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2022-09-08T13:25:16.926Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "7",
+      "object_repr": "Текущий заказ: 7",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2022-09-09T08:52:26.572Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "#Офис2. офис",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2022-09-12T08:17:55.185Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "#Чайник. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2022-09-12T08:18:22.882Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "#Чайник. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0440\\u0430\\u0442\\u043a\\u043e\\u0435 \\u043e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2022-09-12T08:18:42.251Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "#Чайник. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2022-09-12T08:58:26.402Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "#Чайник. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2022-09-12T08:59:29.708Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "#Чайник. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2022-09-12T09:14:59.722Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "#Чайник. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2022-09-12T09:15:56.510Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "#Чайник. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2022-09-12T09:16:05.928Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "#Чайник. дом",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2022-09-12T09:19:15.212Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "#Чайник. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u0435\\u043d\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2022-09-12T09:20:27.469Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "#Чайник. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u0435\\u043d\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2022-09-12T16:06:48.807Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "Чайник. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u0435\\u043d\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2022-09-12T16:07:09.459Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "Чайник. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u0435\\u043d\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2022-09-12T16:07:48.329Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "Чайник. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u0435\\u043d\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2022-09-12T16:08:04.919Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "Чайник. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u0435\\u043d\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2022-09-24T15:24:00.499Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "Чайник. дом",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2022-10-13T15:29:04.783Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "15",
+      "object_repr": "Stiv",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2022-10-13T15:29:14.916Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "17",
+      "object_repr": "id619429112",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2022-10-13T15:29:55.569Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "11",
+      "object_repr": "Текущий заказ: 11",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2022-10-13T15:29:55.572Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "12",
+      "object_repr": "Текущий заказ: 12",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2022-10-13T15:29:55.574Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "13",
+      "object_repr": "Текущий заказ: 13",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2022-10-13T15:29:55.575Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "14",
+      "object_repr": "Текущий заказ: 14",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2022-10-13T15:29:55.577Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "15",
+      "object_repr": "Текущий заказ: 15",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2022-10-13T15:29:55.578Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "16",
+      "object_repr": "Текущий заказ: 16",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2022-10-13T15:29:55.581Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "17",
+      "object_repr": "Текущий заказ: 17",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2022-10-13T15:55:50.796Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "8",
+      "object_repr": "Текущий заказ: 8",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u0435\\u043d\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2022-10-13T15:55:55.845Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "9",
+      "object_repr": "Текущий заказ: 9",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u0435\\u043d\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2022-10-13T15:56:00.994Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "10",
+      "object_repr": "Текущий заказ: 10",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u0435\\u043d\"]}}]"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "0p8pf93uneoqt56v5h7o808vuoulqwb7",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hCYoQy6dN8zNMNApWpoUtqV8e7apAvd_vfef6mBt7UMW8vLMCV1UVadfrfI8sh1B-nO9TZrmeu6TFHvij5o0_2c8vN6uH8HhVv51t4AIY-UAKkLAtZ2gt4Y5AAmAll2AhHFoXMEGSON4hNQlDCm4M_q_QGv8jcB:1oWHRL:5QNnVJiIBzcXpqA3VBgon1WuoVmpcgeNMumIEkISn18",
+      "expire_date": "2022-09-22T13:19:31.703Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "30k06rwmoufnx8ywddwxdhruzlanc07z",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hCYoQy6dN8zNMNApWpoUtqV8e7apAvd_vfef6mBt7UMW8vLMCV1UVadfrfI8sh1B-nO9TZrmeu6TFHvij5o0_2c8vN6uH8HhVv51t4AIY-UAKkLAtZ2gt4Y5AAmAll2AhHFoXMEGSON4hNQlDCm4M_q_QGv8jcB:1oiC61:yhvBKLxek0rZiXHX2gDXtbVSDpCsmiZSuvZZZZCQcsg",
+      "expire_date": "2022-10-25T10:02:45.096Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "4e2qheb55n5swnw7kyhgjoymfkstca17",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hCYoQy6dN8zNMNApWpoUtqV8e7apAvd_vfef6mBt7UMW8vLMCV1UVadfrfI8sh1B-nO9TZrmeu6TFHvij5o0_2c8vN6uH8HhVv51t4AIY-UAKkLAtZ2gt4Y5AAmAll2AhHFoXMEGSON4hNQlDCm4M_q_QGv8jcB:1odQL2:KPz6HjMAfT6bQzKqoZA-0kYaQ0YxpnnbT2dXPYJsx2I",
+      "expire_date": "2022-10-12T06:14:32.956Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "cxabz6zockjqyk10kod0wmlvgsfcnl4n",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hCYoQy6dN8zNMNApWpoUtqV8e7apAvd_vfef6mBt7UMW8vLMCV1UVadfrfI8sh1B-nO9TZrmeu6TFHvij5o0_2c8vN6uH8HhVv51t4AIY-UAKkLAtZ2gt4Y5AAmAll2AhHFoXMEGSON4hNQlDCm4M_q_QGv8jcB:1oPjVb:WPQkzSmm9P5VC7aQRz6rTaIx68Hmkutw2doMVJ23B98",
+      "expire_date": "2022-09-04T11:52:51.323Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "dcqkg8ky82yjvnffxznb0ywuoei1jsmt",
+    "fields": {
+      "session_data": ".eJxVjEsOAiEQRO_C2hCw-bp07xlI07QyaiCZz8p4dyWZhe4q9V7VSyTc1pq2hec0FXESR3H47TLSg9sA5Y7t1iX1ts5TlkORO13kpRd-nnf376DiUr9rZx17ymAiOK-D0WAyEUQHXl2JQbMmdogWgvc2K2XI84g26mABxPsDv202lg:1oCjdx:97pqMw4c222uP8_-19s7kI_azqwBSIZR641DTU58pBg",
+      "expire_date": "2022-07-30T15:23:45.483Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "il6zy6eqeay8pkabusfe10yke1xmmw8w",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAUBf-FtSHltkBx6d5vIPdBpWogKe3K-O_apAvdnpk5LxVxW3PcWlriLOqsjDr9boT8SGUHcsdyq5prWZeZ9K7ogzZ9rZKel8P9O8jY8rcG6MERovcewAQWR9NkmcmDdYPrRxKZegGSztk0DJ2wDT4YNJDGDoJ6fwDftTed:1o3LcL:nWvySjPS7y500pQC1S7Ao5r7PkYWMg4SKeRJUiQCuFQ",
+      "expire_date": "2022-07-04T17:55:17.240Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "nedr2zmk8isflmvvw84hzvopx7ea7txz",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAUBf-FtSHltkBx6d5vIPdBpWogKe3K-O_apAvdnpk5LxVxW3PcWlriLOqsjDr9boT8SGUHcsdyq5prWZeZ9K7ogzZ9rZKel8P9O8jY8rcG6MERovcewAQWR9NkmcmDdYPrRxKZegGSztk0DJ2wDT4YNJDGDoJ6fwDftTed:1o4Rk1:c7mgq-dNAtIxlU_OonNySu7UOIEmP2gYnDGBMS_oyR8",
+      "expire_date": "2022-07-07T18:39:45.080Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "qtjkhve5kgbzcfpha2ker2ti97eqfevp",
+    "fields": {
+      "session_data": "e30:1oOcPl:KNFHY44VxyZUnbclEthJ8vah2rJQTaPn5zxR3sjpmJE",
+      "expire_date": "2022-09-01T10:06:13.120Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "ravfep2mnm5a0nwhxbs8oel5vubumnek",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAUBf-FtSHltkBx6d5vIPdBpWogKe3K-O_apAvdnpk5LxVxW3PcWlriLOqsjDr9boT8SGUHcsdyq5prWZeZ9K7ogzZ9rZKel8P9O8jY8rcG6MERovcewAQWR9NkmcmDdYPrRxKZegGSztk0DJ2wDT4YNJDGDoJ6fwDftTed:1oOd6I:hpck0jygFTmGUrwT8MDuDiMMous5995O6F2W3yewyyI",
+      "expire_date": "2022-09-01T10:50:10.274Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "ureyx6f5l1p1sa8qjhc1ma3hih9a831b",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hCYoQy6dN8zNMNApWpoUtqV8e7apAvd_vfef6mBt7UMW8vLMCV1UVadfrfI8sh1B-nO9TZrmeu6TFHvij5o0_2c8vN6uH8HhVv51t4AIY-UAKkLAtZ2gt4Y5AAmAll2AhHFoXMEGSON4hNQlDCm4M_q_QGv8jcB:1og5Y4:jFdgDyquIKQJwxTx1BLq0qCuStCWGVO1Zr-RXpClfpg",
+      "expire_date": "2022-10-19T14:39:00.641Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "w1akqwmcmtqi84u89912kihyyhvrl5lq",
+    "fields": {
+      "session_data": ".eJxVjckKwjAYhN8lZ63Nnyap3txBLCKCoJeSrXaRBm0UqfjuptCD3oZZvnmjVDxcnj4ac08LjSYIo8GvJ4WqTN0FuhT1xQbK1u5eyKCrBH3aBInV5jrru3-AXDS5X7MQOBEZ10A4jRVgTBVhYUhEDKEEjkWkQBIVkSjiYIjkmWIauFRxpmM29tDavJwnjbx8VkPbXUDaOOGMd0EeNtPTjW4tS0raLvh-vcW75LWi82Nrz0v0-QLf8kq0:1odY6m:quFvLYCO1NB9lHrQOY4tUugEvEPqxi3JHQcHUlpdrVE",
+      "expire_date": "2022-10-12T14:32:20.555Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "x2h34p0rch69jw57pp28c5loo7gm0e5a",
+    "fields": {
+      "session_data": ".eJxVjEsOAiEQRO_C2hCw-bp07xlI07QyaiCZz8p4dyWZhe4q9V7VSyTc1pq2hec0FXESR3H47TLSg9sA5Y7t1iX1ts5TlkORO13kpRd-nnf376DiUr9rZx17ymAiOK-D0WAyEUQHXl2JQbMmdogWgvc2K2XI84g26mABxPsDv202lg:1oOd77:vInC4leRzjkXIaXBle1UwqiNQgHZk6UcZYb6ffHfzDI",
+      "expire_date": "2022-09-01T10:51:01.862Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "ye3mhk58kiylewdsgwh5czysmhwm9igq",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hCYoQy6dN8zNMNApWpoUtqV8e7apAvd_vfef6mBt7UMW8vLMCV1UVadfrfI8sh1B-nO9TZrmeu6TFHvij5o0_2c8vN6uH8HhVv51t4AIY-UAKkLAtZ2gt4Y5AAmAll2AhHFoXMEGSON4hNQlDCm4M_q_QGv8jcB:1oj0nG:FpNGuIf2a8ZAdn-UAosmitzKP3CteJqlzCkKodYMeg8",
+      "expire_date": "2022-10-27T16:10:46.476Z"
+    }
+  },
+  {
+    "model": "mainapp.category",
+    "pk": 1,
+    "fields": {
+      "name": "дом",
+      "description": "Какое-то описание категории Дом",
+      "is_active": true
+    }
+  },
+  {
+    "model": "mainapp.category",
+    "pk": 2,
+    "fields": {
+      "name": "офис",
+      "description": "Какое-то описание категории Офис",
+      "is_active": true
+    }
+  },
+  {
+    "model": "mainapp.category",
+    "pk": 3,
+    "fields": {
+      "name": "модерн",
+      "description": "Какое-то описание категории Модерн",
+      "is_active": true
+    }
+  },
+  {
+    "model": "mainapp.category",
+    "pk": 4,
+    "fields": {
+      "name": "классика",
+      "description": "Какое-то описание категории Классика",
+      "is_active": true
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 4,
+    "fields": {
+      "category": 2,
+      "name": "Офис2",
+      "image": "product/product-4.jpg",
+      "shot_desc": "Краткое описание Офис2",
+      "description": "Подробное описание товара Офис2",
+      "price": "400.33",
+      "quantity": 9,
+      "is_active": true
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 5,
+    "fields": {
+      "category": 3,
+      "name": "Модерн1",
+      "image": "product/product-41.jpg",
+      "shot_desc": "Краткое описание Модерн1",
+      "description": "Подробное описание товара Модерн1",
+      "price": "1239.00",
+      "quantity": 10,
+      "is_active": true
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 7,
+    "fields": {
+      "category": 4,
+      "name": "Классика1",
+      "image": "product/product-51.jpg",
+      "shot_desc": "Краткое описание Классика1",
+      "description": "Подробное описание товара Классика1",
+      "price": "2400.00",
+      "quantity": 13,
+      "is_active": true
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 9,
+    "fields": {
+      "category": 1,
+      "name": "Тест дом",
+      "image": "product/product-41_HlaavkT.jpg",
+      "shot_desc": "Краткое описание Тест Дом",
+      "description": "Полное описание Тест Дом",
+      "price": "1274.88",
+      "quantity": 13,
+      "is_active": true
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 10,
+    "fields": {
+      "category": 1,
+      "name": "Тест дом",
+      "image": "product/product-41_sk7zId6.jpg",
+      "shot_desc": "Краткое описание Тест Дом",
+      "description": "Полное описание Тест Дом",
+      "price": "1274.88",
+      "quantity": 8,
+      "is_active": true
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 11,
+    "fields": {
+      "category": 1,
+      "name": "Чайник",
+      "image": "product/controll2.jpg",
+      "shot_desc": "Краткое описание Чайник",
+      "description": "Полное описание Чайник",
+      "price": "639.36",
+      "quantity": 11,
+      "is_active": true
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 13,
+    "fields": {
+      "category": 3,
+      "name": "Тест модерн",
+      "image": "product/product-11.jpg",
+      "shot_desc": "Очень краткое описание Тест Модерн",
+      "description": "Совсем полное и подробное описание",
+      "price": "889.00",
+      "quantity": 34,
+      "is_active": true
+    }
+  },
+  {
+    "model": "authapp.shopuser",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$j99PUluSRg6jF68tgybgQV$UW/70nv0o1acVNCbDAB1cgffjDDmYPvXvUuFMA5OoMA=",
+      "last_login": "2022-10-13T16:10:46.301Z",
+      "is_superuser": true,
+      "username": "django",
+      "first_name": "",
+      "last_name": "",
+      "email": "django@bg.local",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2022-06-09T23:59:48Z",
+      "avatar": "",
+      "age": 33,
+      "activation_key": "",
+      "activation_key_expires": "2022-08-17T22:25:12Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "authapp.shopuser",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$r79JEeQ3qo3QPjQfbWtbQX$ObTejnMVzp3OvrruC0btJqOdYpsPH03EWmPhz1afOqs=",
+      "last_login": "2022-09-08T13:18:46.080Z",
+      "is_superuser": false,
+      "username": "user2",
+      "first_name": "Petr",
+      "last_name": "Ivanov",
+      "email": "user2@gb.local",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-06-10T08:29:24Z",
+      "avatar": "users_avatars/ava_user2_cU6I8FT.jpeg",
+      "age": 45,
+      "activation_key": "",
+      "activation_key_expires": "2022-08-17T22:25:12.802Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "authapp.shopuserprofile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "tagline": "",
+      "aboutMe": "",
+      "gender": ""
+    }
+  },
+  {
+    "model": "authapp.shopuserprofile",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "tagline": "",
+      "aboutMe": "",
+      "gender": ""
+    }
+  },
+  {
+    "model": "ordersapp.order",
+    "pk": 8,
+    "fields": {
+      "user": 1,
+      "created": "2022-09-08T13:24:18.976Z",
+      "updated": "2022-10-13T15:57:47.812Z",
+      "status": "FM",
+      "is_active": false
+    }
+  },
+  {
+    "model": "ordersapp.order",
+    "pk": 9,
+    "fields": {
+      "user": 1,
+      "created": "2022-09-08T13:27:22.245Z",
+      "updated": "2022-10-13T15:55:55.843Z",
+      "status": "FM",
+      "is_active": true
+    }
+  },
+  {
+    "model": "ordersapp.order",
+    "pk": 10,
+    "fields": {
+      "user": 1,
+      "created": "2022-09-09T15:20:23.932Z",
+      "updated": "2022-10-13T15:56:00.993Z",
+      "status": "FM",
+      "is_active": true
+    }
+  },
+  {
+    "model": "ordersapp.order",
+    "pk": 18,
+    "fields": {
+      "user": 1,
+      "created": "2022-10-13T15:58:08.961Z",
+      "updated": "2022-10-13T15:58:08.979Z",
+      "status": "FM",
+      "is_active": true
+    }
+  },
+  {
+    "model": "ordersapp.orderitem",
+    "pk": 4,
+    "fields": {
+      "order": 9,
+      "product": 4,
+      "quantity": 3
+    }
+  },
+  {
+    "model": "ordersapp.orderitem",
+    "pk": 6,
+    "fields": {
+      "order": 9,
+      "product": 5,
+      "quantity": 2
+    }
+  },
+  {
+    "model": "ordersapp.orderitem",
+    "pk": 7,
+    "fields": {
+      "order": 10,
+      "product": 7,
+      "quantity": 5
+    }
+  },
+  {
+    "model": "ordersapp.orderitem",
+    "pk": 29,
+    "fields": {
+      "order": 18,
+      "product": 4,
+      "quantity": 1
+    }
+  },
+  {
+    "model": "ordersapp.orderitem",
+    "pk": 30,
+    "fields": {
+      "order": 18,
+      "product": 11,
+      "quantity": 1
+    }
+  },
+  {
+    "model": "ordersapp.orderitem",
+    "pk": 31,
+    "fields": {
+      "order": 18,
+      "product": 13,
+      "quantity": 1
+    }
+  }
+]

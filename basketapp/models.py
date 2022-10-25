@@ -3,6 +3,8 @@ from django.conf import settings
 
 from mainapp.models import Product
 
+from django.utils.functional import cached_property
+
 class BasketQuerySet(models.QuerySet):
     def delete(self, *args, **kwargs):
         for object in self:
@@ -29,6 +31,12 @@ class Basket(models.Model):
         ordering = ('created_at',)
 
     """ Следующий код (ф-ции) лучше писать в СЕРВИСНОЙ МОДЕЛИ в Джанго !!!? """
+
+    @cached_property
+    def get_items_cached(self):
+        """ Создаем кеш корзины """
+        return self.user.basket_set.select_related()
+
     @property
     def product_cost(self):     # Стоимость продукта
         """ Метод при получении стоимости КорзинкИ """
@@ -36,13 +44,19 @@ class Basket(models.Model):
 
     @property
     def total_quantity(self):   # Общая численность
-        _items = Basket.objects.filter(user=self.user)
-        # return sum(list(map(lambda x: x.quantity, _items)))
-        return sum(list(_items.values_list('quantity', flat=True)))
+        # _items = Basket.objects.filter(user=self.user)
+        # # return sum(list(map(lambda x: x.quantity, _items)))
+        # return sum(list(_items.values_list('quantity', flat=True)))
+        """ после как создали Кеш """
+        _items = self.get_items_cached
+        return sum(list(map(lambda x: x.quantity, _items)))
 
     @property
     def total_cost(self):       # Общая стоимость
-        _items = Basket.objects.filter(user=self.user)
+        # _items = Basket.objects.filter(user=self.user)
+        # return sum(list(map(lambda x: x.product_cost, _items)))
+        """ после как создали Кеш """
+        _items = self.get_items_cached
         return sum(list(map(lambda x: x.product_cost, _items)))
 
     @staticmethod
