@@ -5,6 +5,7 @@ from basketapp.models import Basket
 from mainapp.models import Product
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse
+from django.db.models import F
 
 @login_required
 def basket_list(request):

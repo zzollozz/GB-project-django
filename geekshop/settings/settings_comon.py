@@ -192,7 +192,7 @@ EMAIL_HOST_USER, EMAIL_HOST_PASSWORD = None, None
 # EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 # EMAIL_FILE_PATH = 'tmp/email-messages/'
 
-if DEBUG:
+if not DEBUG:
     def show_toolbar(request):
         return True
     DEBUG_TOOLBAR_CONFIG = {
